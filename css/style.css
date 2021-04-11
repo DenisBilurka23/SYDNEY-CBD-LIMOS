@@ -1,0 +1,790 @@
+@font-face {
+	font-family: 'gobold_cyr-latregular';
+	src: url('goboldcyr-lat-webfont.eot');
+	src: url('goboldcyr-lat-webfont.eot?#iefix') format('embedded-opentype'),
+	url('goboldcyr-lat-webfont.woff2') format('woff2'),
+	url('goboldcyr-lat-webfont.woff') format('woff'),
+	url('goboldcyr-lat-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+/*@media screen (min-width: 768px){
+	.carCardStyle1{
+	background: url(../images/carCard1.png);
+	background-size: cover;
+}
+}
+@media screen (max-width: 768px){
+	.carCardStyle1{
+	background: none;
+	background-size: cover;
+}
+
+}*/
+
+body{
+	font-family: "Open Sans";
+}
+.navStyle li{
+	white-space: nowrap;
+	font-size: 13px;
+	font-weight: 300;
+}
+.navStyle{
+	margin-top: 90px;
+}
+.navbar a{
+	color: #ffffff;;
+}
+.toggler{
+	margin-top:100px;
+	padding-left:10px;
+}
+.brandstyle{
+	margin-top:90px;
+	position: relative;
+}
+
+.toggler:focus{
+	outline: none;
+	
+}
+.newToggler{
+	position: absolute;
+}
+.cross{
+	position: relative;
+	transform: rotate(45deg);
+	top:-23px;
+	right: 6px;
+	display: none;
+}
+.el1{
+	width: 30px;
+	height: 2px;
+	background-color: white;
+}
+.el2{
+	width: 2px;
+	height: 30px;
+	background-color: white;
+	position: absolute;
+	top:-14px;
+	left:15px;
+}
+.stripe{
+	position: relative;
+	top:-30px;
+	right: 10px;
+	width: 40px;
+	height: 2px;
+	background-color: white;
+	margin-bottom: 5px;
+}
+
+.logoLight{
+	display: none;
+}
+.line1{
+	color: #ffffff;
+	font-family: "Source Sans Pro";
+	font-size: 27px;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+}
+.line1 span{
+	font-weight: 700;
+}
+.line2{
+	color: #9e171d;
+	font-family: "Source Sans Pro";
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2.7px;
+}
+.logoText{
+	position: absolute;
+	left: 120%;
+	top:5px;
+
+}
+.wrapper{
+	padding-bottom: 60px;
+}
+.car{
+	width: inherit;
+}
+.outerCar{
+	z-index: 20;
+}
+.block2{
+	padding-top: 30px;
+	padding-bottom: 100px;
+	background-color: black;
+}
+
+.carInfo{
+	font-weight: 300;
+	line-height: 24px;
+	color: #494a4a;
+	z-index: 5;
+}
+
+.textBG{
+	height: 372px;
+	background: url(../images/textBG.png);
+	right:40px;
+}
+
+.itemBorder{
+	border-bottom: 2px  #494a4a solid;
+	/*padding-bottom: 10px;*/
+}
+.itemColor{
+	color: #82878a;
+}
+.item1{
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.cardPage{
+	font-family: "Gobold CYR - LAT";
+}
+.cardPage span{
+	color: #707477;
+}
+
+.arrow{
+	top:12px;
+	left: 76px;
+}
+.carCardName{
+	margin: 50px 0 40px 0;
+	color:white;
+	font-family: "Gobold CYR - LAT";
+	font-size: 25px;
+}
+.carCardName:after{
+	width: 50px;
+	height: 2px;
+	content: "";
+	background-color: white;
+	display: block;
+}
+.carCardName span{
+	color: #0e0e0e;
+}
+.wrapper2{
+	background-color: black;
+}
+.carCardText{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	color: white;
+}
+
+.carCardStyle1{
+	background: url(../images/carCard1.png);
+	background-size: cover;
+}
+.carCardStyle1:before{
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	content: "";
+	display: block;
+	opacity: .5;
+	position: absolute;
+
+}
+.carCardStyle2{
+	background: url(../images/carCard2.png);
+	background-size: cover;
+}
+.carCardStyle3{
+	background: url(../images/carCard3.png);
+	background-size: cover;
+}
+.CarCardArrow{
+	margin-bottom: 50px;
+	display: block;
+	width: 44px;
+	height: 44px;
+	border: white 1px solid;
+	position: relative;
+}
+.CarCardArrow:hover{
+	border: 1px solid #9e171d;
+}
+.CarCardArrow:hover:before{
+	background-color: #9e171d;
+}
+.CarCardArrow:hover:after{
+	border-bottom: 1px solid #9e171d;
+	border-right: 1px solid #9e171d;
+}
+.CarCardArrow{
+	margin-bottom: 50px;
+	display: block;
+	width: 44px;
+	height: 44px;
+	border: white 1px solid;
+	position: relative;
+}
+.CarCardArrow1:hover{
+	border: 1px solid black;
+}
+.CarCardArrow1:hover:before{
+	background-color: black;
+}
+.CarCardArrow1:hover:after{
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.CarCardArrow:before{
+	content: "";
+	display: block;
+	width: 20px;
+	height: 1px;
+	background-color: white;
+	position: absolute;
+	top:22px;
+	left: 5px;
+}
+
+.CarCardArrow:after{
+	top: 16px;
+	right: 9px;
+	content: "";
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+	position: absolute;
+	transform: rotate(-45deg);
+}
+
+.arrowL{
+	width: 44px;
+	height: 44px;
+	border: #82878a 1px solid;
+	position: absolute;
+	bottom: 40%;
+	right: 100%;
+}
+.arrowL:hover{
+	border: 1px solid #9e171d;
+}
+.arrowR:hover{
+	border: 1px solid #9e171d;
+}
+.arrowL:hover .innerArrowL, .arrowR:hover .innerArrowR{
+	background-color: #9e171d;
+}
+.arrowL:hover .innerArrowL:before, .arrowR:hover .innerArrowR:before{
+	border-left: #9e171d solid 1px;
+	border-top: #9e171d solid 1px;
+}
+.arrowR{
+	width: 44px;
+	height: 44px;
+	border: #82878a 1px solid;
+	position: absolute;
+	bottom: 40%;
+	left: 100%;
+}
+.innerArrowL{
+	position: absolute;
+	background-color: #82878a;
+	width: 20px;
+	height: 1px;
+	bottom: 50%;
+	left: 12px;
+}
+.innerArrowL:before{
+	position: absolute;
+	top:-5px;
+	left:-4px;
+	transform: rotate(-45deg);
+	content: "";
+	width: 9px;
+	height: 9px;
+	border-left: #82878a solid 1px;
+	border-top: #82878a solid 1px;
+}
+
+.innerArrowR{
+	position: absolute;
+	background-color: #82878a;
+	width: 20px;
+	height: 1px;
+	bottom: 50%;
+	right: 12px;
+	transform: rotate(180deg);
+}
+.innerArrowR:before{
+	position: absolute;
+	top:-5px;
+	left:-4px;
+	transform: rotate(-45deg);
+	content: "";
+	width: 9px;
+	height: 9px;
+	border-left: #82878a solid 1px;
+	border-top: #82878a solid 1px;
+}
+
+
+.innerTextBlock3{
+	font-family: "Gobold CYR - LAT";
+	font-size: 40px;
+	color: #0e0e0e;
+	margin-bottom: 10px;
+	margin-top: 80px;
+	position: relative;
+}
+.innerTextBlock3:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 50px;
+	height: 2px;
+	background-color: #9e171d;
+}
+.innerTextBlock3 span{
+	color: #9e171d
+}
+
+.innerTextBlock3_2{
+	color: #82878a;
+	font-size: 13px;
+	font-weight: 300;
+}
+.outercars{
+	width: inherit;
+	position: relative;
+	margin: 65px 0 25px 0;
+}
+.outercars:hover:after{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 74px;
+	background-color: #9e171d;
+	opacity: 0.85;
+}
+.outercars:hover .specs{
+	display: block;
+}
+.cars{
+	width: inherit;
+	padding: 0 10px 0 10px;
+
+}
+.specs{
+	z-index: 5;
+	display: none;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 13px;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+
+.carName{
+	color: #000000;
+	font-family: "Gobold CYR - LAT";
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 80px;
+}
+.block4{
+	padding-bottom: 80px;
+	background-color: #161616;
+	color: #82878a;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.innerContactText{
+	color: #ffffff;
+	font-family: "Gobold CYR - LAT";
+	font-size: 40px;
+	margin:80px 0 10px 0;
+}
+.innerContactText:after{
+	content: "";
+	display: block;
+	width: 50px;
+	height: 2px;
+	background-color: #9e171d;
+}
+.contactText{
+	margin-bottom: 40px;
+}
+input[type="checkbox"]{
+	display: none;
+}
+
+.labelOption1{
+	padding-left:0;
+	position: relative;
+
+}
+input[type="checkbox"]:checked label:after{
+	background: url(../images/checkmark.png);
+	position: absolute;
+	right: 0;
+	bottom: 4px;
+	display: block;
+	height: 16px;
+	width: 23px;
+	content: "";
+}
+
+
+
+.labelOption1:before{
+	height: 23px;
+	width: 23px;
+	display: block;
+	content: "";
+	border: 2px solid #9e171d;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.labelOption2{
+	position: relative;
+}
+
+.labelOption2:before{
+	height: 23px;
+	width: 23px;
+	display: block;
+	content: "";
+	border: 2px solid #9e171d;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.vType{
+	/*display: inline-block;*/
+	position: relative;
+}
+.vTypeText{
+	padding: 9px 0 9px 9px;
+	border: 1px solid #4a4c4c;
+	position: relative;
+}
+.vTypeText{
+	cursor: pointer;
+}
+.vTypeText:after{
+	content: "";
+	display: block;
+	width: 1px;
+	height: 38px;
+	position: absolute;
+	bottom: 0;
+	right: 32px;
+	background-color: #4a4c4c;
+}
+.vTypeArrowDown{
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+	width: 12px;
+	height: 12px;
+	border-left: 1px solid #9e171d;
+	border-bottom: 1px solid #9e171d;
+	transform: rotate(-45deg);
+	cursor: pointer;
+}
+.vTypeArrowUp{
+	position: absolute;
+	top: 18px;
+	right: 10px;
+	width: 12px;
+	height: 12px;
+	border-left: 1px solid #9e171d;
+	border-bottom: 1px solid #9e171d;
+	transform: rotate(-225deg);
+	display: none;
+	cursor: pointer;
+}
+.dropMenu{
+	display: none;
+	position: absolute;
+	background-color: #ffffff;
+	border: 1px solid #4a4c4c;
+	top: 100%;
+	left: 0;
+	z-index: 100;
+}
+.dropMenu>div{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.dropMenu>div:last-child{
+	margin-bottom: 20px;
+}
+
+.userInfInp input{
+	width: 100%;
+	border-radius: 0;
+	border: none;
+	height: 30px;
+	outline: 0;
+}
+
+.userInfInp label>span{
+	color: #9e171d;
+}
+.userInfInp{
+	margin-bottom: 20px;
+}
+.form-control{
+	resize: none;
+	border-radius: 0;
+	border: 0;
+}
+
+input[type="submit"]{
+	background-color: transparent;
+	color: white;
+	border: 1px white solid;
+	outline: 0;
+	height: 45px;
+}
+input[type="submit"]:hover{
+	background-color: rgba(255, 0, 0, .5);
+}
+.block4_2{
+	color: white;
+}
+.block4_2>h3{
+	margin: 80px 0 50px 0;
+	font-family: "Gobold CYR - LAT";
+	font-size: 40px;
+}
+.block4_2>h3>span{
+	color: #9e171d;
+}
+.block4_2>h3>span:after{
+	content: "";
+	width: 50px;
+	height: 2px;
+	background-color: white;
+	display: block;
+}
+.bucks{
+	font-family: "Gobold CYR - LAT";
+	font-size: 40px;
+}
+.block4_2Text{
+	margin: 25px 0 35px 0;
+}
+.block4_2>a{
+	font-size: 13px;
+	color: white;
+	text-decoration: none;
+	padding-left: 20px;
+	position: relative;
+	margin-bottom: 40px;
+}
+.block4_2>a:before{
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-left: 1px solid white;
+	border-bottom: 1px solid white;
+	transform: rotate(45deg);
+	content: "";
+	left: 5px;
+	bottom: 5px;
+}
+
+
+.testDiv{
+	width: 50px;
+	height: 50px;
+	background-color: red;
+}
+.testDiv2{
+	width: 50px;
+	height: 50px;
+	background-color: green;
+}
+
+
+.testDiv:hover .testDiv2{
+	background-color: blue;
+}
+
+.CommentsTop{
+	color: #ffffff;
+	font-family: "Gobold CYR - LAT";
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.CommentsTop:after{
+	background-color: #9e171d;
+	content: "";
+	display: block;
+	width: 50px;
+	height: 2px;
+
+}
+.CommentsBottom{
+	white-space: nowrap;
+	color: #82878a;
+	font-size: 13px;
+	font-weight: 300;
+}
+.block5{
+	background-color: black;
+	padding: 80px 0 100px 0;
+}
+.arrowBlock5L, .arrowBlock5R{
+	width: 45px;
+	height: 45px;
+	border: 1px solid #9e171d;
+	position: relative;
+}
+.arrowBlock5L:before, .arrowBlock5R:before{
+	position: absolute;
+	display: block;
+	content: "";
+	width: 20px;
+	height: 1px;
+	top:50%;
+	background-color: #9e171d;
+}
+.arrowBlock5L:before{
+	right: 8px;
+}
+.arrowBlock5R:before{
+	left: 8px;
+}
+.arrowBlock5L:after{
+	position: absolute;
+	top: 16px;
+	left: 8px;
+	width: 10px;
+	height: 10px;
+	display: block;
+	content: "";
+	border-left: #9e171d 1px solid;
+	border-bottom: #9e171d 1px solid;
+	transform: rotate(45deg);
+}
+.arrowBlock5R:after{
+	position: absolute;
+	top: 16px;
+	right: 8px;
+	width: 10px;
+	height: 10px;
+	display: block;
+	content: "";
+	border-right: #9e171d 1px solid;
+	border-bottom: #9e171d 1px solid;
+	transform: rotate(-45deg);
+}
+.arrows{
+	margin-top: 10px;
+}
+
+.row2{
+	padding: 80px 0 100px 0;
+}
+
+.block5Comment{
+	margin: 25px 0 20px 0;
+	color: #82878a;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.block5Name{
+	color: #9e171d;
+	font-family: "Gobold CYR - LAT";
+	font-size: 14px;
+}
+.innerBlock5{
+	margin-bottom: 80px;
+}
+.block6Name{
+	color: black;
+	font-family: "Gobold CYR - LAT";
+	font-size: 25px;
+	/*padding: 0 0 50px 0;*/
+}
+.block6Name>span{
+	color: #9e171d;
+}
+
+.block6Name:after{
+	display: block;
+	content: "";
+	width: 50px;
+	height: 2px;
+	background-color: #9e171d;
+}
+
+.block6{
+	padding: 80px 0 80px 0;
+}
+
+.innerBlock6>a{
+	color: #82878a;
+	font-size: 14px;
+}
+.innerBlock6{
+	color: #82878a;
+	font-size: 14px;
+}
+
+.block6Bottom{
+	padding: 10px 0 10px 0;
+	background-color: #e6e6e6;
+	color: #82878a;
+	font-size: 13px;
+}
+.block6Bottom a{
+	color: #82878a;
+}
+.block6link2{
+	color: #9e171d!important;
+}
+.innerBlock6Bottom, .socialMediaIcons, .copyright{
+	padding: 0;
+}
+.footerIcon{
+	height: 29px;
+}
+.innerBlock6Bottom2{
+	margin: 0;
+}
+.socialMediaIcons>a{
+	display: inline-block;
+	margin-left: 6px;
+
+}
+
+
