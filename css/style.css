@@ -8,94 +8,44 @@
 	font-weight: normal;
 	font-style: normal;
 }
-/*@media screen (min-width: 768px){
-	.carCardStyle1{
-	background: url(../images/carCard1.png);
-	background-size: cover;
-}
-}
-@media screen (max-width: 768px){
-	.carCardStyle1{
-	background: none;
-	background-size: cover;
-}
-
-}*/
 
 body{
 	font-family: "Open Sans";
+	max-width: 100vw;
 }
-.navStyle li{
+.items ul{
+	list-style-type: none;
+}
+.items li{
 	white-space: nowrap;
 	font-size: 13px;
 	font-weight: 300;
 }
-.navStyle{
+.items{
 	margin-top: 90px;
 }
-.navbar a{
+.items a{
 	color: #ffffff;;
 }
 .toggler{
-	margin-top:100px;
-	padding-left:10px;
+	margin-top: 95px;
+	cursor: pointer;
 }
-.brandstyle{
-	margin-top:90px;
-	position: relative;
-}
-
 .toggler:focus{
 	outline: none;
 	
 }
-.newToggler{
-	position: absolute;
-}
-.cross{
-	position: relative;
-	transform: rotate(45deg);
-	top:-23px;
-	right: 6px;
-	display: none;
-}
-.el1{
-	width: 30px;
-	height: 2px;
-	background-color: white;
-}
-.el2{
-	width: 2px;
-	height: 30px;
-	background-color: white;
-	position: absolute;
-	top:-14px;
-	left:15px;
-}
-.stripe{
-	position: relative;
-	top:-30px;
-	right: 10px;
-	width: 40px;
-	height: 2px;
-	background-color: white;
-	margin-bottom: 5px;
-}
-
-.logoLight{
-	display: none;
-}
-.line1{
+.logoText__line-1{
 	color: #ffffff;
 	font-family: "Source Sans Pro";
 	font-size: 27px;
 	letter-spacing: 1.6px;
 	text-transform: uppercase;
 }
-.line1 span{
+.logoText__line-1 span{
 	font-weight: 700;
 }
-.line2{
+.logoText__line-2{
 	color: #9e171d;
 	font-family: "Source Sans Pro";
 	font-size: 15px;
@@ -103,14 +53,19 @@ body{
 	text-transform: uppercase;
 	letter-spacing: 2.7px;
 }
-.logoText{
-	position: absolute;
-	left: 120%;
-	top:5px;
-
+.logoText__line-2.active{
+	color: #fff;
 }
+.logoText{
+	vertical-align: top;
+}
+
 .wrapper{
 	padding-bottom: 60px;
+	background: black; 
+}
+.wrapper.active{
+	background: #9e171d;
 }
 .car{
 	width: inherit;
@@ -119,6 +74,8 @@ body{
 	z-index: 20;
 }
 .block2{
+	position: relative;
+	z-index: -10;
 	padding-top: 30px;
 	padding-bottom: 100px;
 	background-color: black;
@@ -139,7 +96,6 @@ body{
 
 .itemBorder{
 	border-bottom: 2px  #494a4a solid;
-	/*padding-bottom: 10px;*/
 }
 .itemColor{
 	color: #82878a;
@@ -201,6 +157,7 @@ body{
 	position: absolute;
 
 }
+
 .carCardStyle2{
 	background: url(../images/carCard2.png);
 	background-size: cover;
@@ -276,7 +233,7 @@ body{
 	border: #82878a 1px solid;
 	position: absolute;
 	bottom: 40%;
-	right: 100%;
+	right: 97%;
 }
 .arrowL:hover{
 	border: 1px solid #9e171d;
@@ -297,7 +254,7 @@ body{
 	border: #82878a 1px solid;
 	position: absolute;
 	bottom: 40%;
-	left: 100%;
+	left: 97%;
 }
 .innerArrowL{
 	position: absolute;
@@ -436,37 +393,37 @@ body{
 .contactText{
 	margin-bottom: 40px;
 }
-input[type="checkbox"]{
+/*input[type="checkbox"]{
 	display: none;
-}
+}*/
 
 .labelOption1{
 	padding-left:0;
 	position: relative;
-
 }
-input[type="checkbox"]:checked label:after{
-	background: url(../images/checkmark.png);
-	position: absolute;
-	right: 0;
-	bottom: 4px;
-	display: block;
-	height: 16px;
-	width: 23px;
-	content: "";
+.labelOption1__input {
+	/*display: none;*/
 }
-
-
-
-.labelOption1:before{
+.selectField{
 	height: 23px;
 	width: 23px;
-	display: block;
-	content: "";
 	border: 2px solid #9e171d;
 	position: absolute;
 	right: 0;
 	bottom: 0;
+}
+.selectField:before {
+	background: url(../images/checkmark.png);
+	position: absolute;
+	right: 0;
+	content: "";
+	bottom: 4px;
+	height: 16px;
+	width: 23px;
+	display: none;
+}
+.labelOption1__input:checked + .selectField:before{
+	display: block;
 }
 
 .labelOption2{
@@ -483,19 +440,17 @@ input[type="checkbox"]:checked label:after{
 	right: 0;
 	bottom: 0;
 }
-.vType{
-	/*display: inline-block;*/
+.vehicleSelect{
 	position: relative;
 }
-.vTypeText{
+.vehicleSelect__selected{
 	padding: 9px 0 9px 9px;
 	border: 1px solid #4a4c4c;
 	position: relative;
-}
-.vTypeText{
 	cursor: pointer;
 }
-.vTypeText:after{
+
+.vehicleSelect__selected:after{
 	content: "";
 	display: block;
 	width: 1px;
@@ -505,7 +460,7 @@ input[type="checkbox"]:checked label:after{
 	right: 32px;
 	background-color: #4a4c4c;
 }
-.vTypeArrowDown{
+.vehicleSelect__Arrow-Down{
 	position: absolute;
 	bottom: 15px;
 	right: 10px;
@@ -516,7 +471,7 @@ input[type="checkbox"]:checked label:after{
 	transform: rotate(-45deg);
 	cursor: pointer;
 }
-.vTypeArrowUp{
+.vehicleSelect__Arrow-Up{
 	position: absolute;
 	top: 18px;
 	right: 10px;
@@ -618,23 +573,6 @@ input[type="submit"]:hover{
 	content: "";
 	left: 5px;
 	bottom: 5px;
-}
-
-
-.testDiv{
-	width: 50px;
-	height: 50px;
-	background-color: red;
-}
-.testDiv2{
-	width: 50px;
-	height: 50px;
-	background-color: green;
-}
-
-
-.testDiv:hover .testDiv2{
-	background-color: blue;
 }
 
 .CommentsTop{
@@ -785,6 +723,41 @@ input[type="submit"]:hover{
 	display: inline-block;
 	margin-left: 6px;
 
+}
+.fa-bars, .fa-times{
+	color: white;
+	font-size: 25px;
+}
+.logoText{
+	margin-left: 15px;
+}
+.logo{
+	vertical-align: baseline;
+}
+.items{
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	top: -10%;
+	transform: translateY(-100px);
+	transition: transform .5s ease;
+	background: black;
+	padding-bottom: 50px
+}
+.items>ul{
+	margin: 0 auto;
+}
+.items.active{
+	transform: translateY(170px);
+	background: #9e171d;
+}
+.customNavbar{
+	position: relative;
+	z-index: 100;
+}
+.customNavbar__leftSide{
+	margin-top: 70px;
 }
 
 
