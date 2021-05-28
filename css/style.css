@@ -393,18 +393,14 @@ body{
 .contactText{
 	margin-bottom: 40px;
 }
-/*input[type="checkbox"]{
-	display: none;
-}*/
-
 .labelOption1{
 	padding-left:0;
 	position: relative;
 }
-.labelOption1__input {
-	/*display: none;*/
+.labelOption1__input, .labelOption2__input{
+	display: none;
 }
-.selectField{
+.selectField-mark1{
 	height: 23px;
 	width: 23px;
 	border: 2px solid #9e171d;
@@ -412,7 +408,7 @@ body{
 	right: 0;
 	bottom: 0;
 }
-.selectField:before {
+.selectField-mark1:before {
 	background: url(../images/checkmark.png);
 	position: absolute;
 	right: 0;
@@ -422,24 +418,35 @@ body{
 	width: 23px;
 	display: none;
 }
-.labelOption1__input:checked + .selectField:before{
+.labelOption1__input:checked + .selectField-mark1:before{
 	display: block;
 }
 
 .labelOption2{
 	position: relative;
 }
-
-.labelOption2:before{
+.selectField-mark2{
 	height: 23px;
 	width: 23px;
-	display: block;
-	content: "";
 	border: 2px solid #9e171d;
 	position: absolute;
 	right: 0;
 	bottom: 0;
 }
+.selectField-mark2:before {
+	background: url(../images/checkmark.png);
+	position: absolute;
+	right: 0;
+	content: "";
+	bottom: 4px;
+	height: 16px;
+	width: 23px;
+	display: none;
+}
+.labelOption2__input:checked + .selectField-mark2:before{
+	display: block;
+}
+
 .vehicleSelect{
 	position: relative;
 }
